@@ -1,1 +1,1 @@
-This made by blacksourcecode may it be a help for you'r furture developing 
+This is made by blacksourcecode may it be a help for you'r furture developing

@@ -1,8 +1,12 @@
 <?php 
 
-/**
-* 
+/*
+*
+* This is a simpel php oop calculator, hope it will be
+* of use, enjoy and happy coding. 
+*
 */
+
 class Calculator
 {
 
@@ -30,11 +34,11 @@ class Calculator
 
 		$operaters = $this->operators();
 
-		if(isset( $_REQUEST['calculate'] ))
+		if(isset( $_POST['calculate'] ))
 
 		{		
 
-			$operatorr = $_REQUEST['operator'];
+			$operatorr = $_POST['operator'];
 
 			foreach($operaters as $operater)
 
@@ -60,18 +64,18 @@ class Calculator
 		foreach($operaters as $operater)
 		{
 
-			if(isset( $_REQUEST['calculate'] ))
+			if(isset( $_POST['calculate'] ))
 
 			{
 		
-				$operatorr = $_REQUEST['operator'];
+				$operatorr = $_POST['operator'];
 
 				if($operatorr == $operater) // can also run without this if statement 
 
 				{
 
-				$value1 = $_REQUEST['val1'];
-				$value2 = $_REQUEST['val2'];
+				$value1 = $_POST['val1'];
+				$value2 = $_POST['val2'];
 
 				$result = eval("return $value1 $operater $value2;");
 

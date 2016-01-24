@@ -1,5 +1,12 @@
 <?php
 
+/*
+*
+* This is a simpel php oop calculator, hope it will be
+* of use, enjoy and happy coding. 
+*
+*/
+
 require_once 'calculator.php';
 
 $cal = new Calculator();
@@ -39,7 +46,7 @@ $cal->run();
             <div class="panel panel-default">
                 <div class="panel-body">
                 <div class="panel-heading"><h3>Calculation = <?php echo $cal->sum();?></h3></div>
-                    <form role="form">
+                    <form action="" method="post" role="form">
                       <div class="form-group">
                         <label for="val1">Value 1</label>
                         <input type="number"  name="val1" class="form-control" placeholder=" Enter number">
